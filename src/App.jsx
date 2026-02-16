@@ -1,17 +1,21 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/About"
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Profile from "./pages/Profile";
+import Contact from "./pages/Contact"
+import Profile from "./pages/Profile"
+
 function App() {
   return (
     <div>
       <nav>
-        <Link to="/">Home</Link>|<Link to="/about">About Me</Link> |
-        <Link to="/projects">Projects</Link> |<Link to="/contact">Contact</Link>{" "}
-        |<Link to="/profile">Profile</Link>
+        <Link to="/">Home</Link> | 
+        <Link to="/about">About</Link> | 
+        <Link to="/projects">My Projects</Link> | 
+        <Link to="/contact">Contact</Link> | 
+        <Link to="/profile">Profile</Link>
       </nav>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -22,4 +26,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
